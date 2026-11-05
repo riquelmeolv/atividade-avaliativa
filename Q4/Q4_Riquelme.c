@@ -2,6 +2,31 @@
 #define SETORES 4
 #define NOTAS 6
 
+/*
+TESTES MANUAIS
+
+1. Medias diferentes e notas criticas
+   Entrada: 1 2 4 5 na primeira avaliacao e 3 4 4 5 nas outras cinco.
+   Esperado: medias de 2.67 (recepcao), 3.67 (limpeza),
+   4.00 (restaurante) e 5.00 (manutencao). Media geral de 3.83.
+   Manutencao tem a maior media e recepcao tem a menor.
+   Total de 1 avaliacao critica, mesmo com duas notas criticas na primeira linha.
+
+2. Empate entre setores
+   Entrada: 5 5 3 3 nas seis avaliacoes.
+   Esperado: recepcao e limpeza empatam na maior media (5.00).
+   Restaurante e manutencao empatam na menor media (3.00).
+   Media geral de 4.00 e total de 0 avaliacoes criticas.
+
+3. Notas fora do intervalo
+   Entrada: para a primeira nota, digitar 0, depois 6 e depois 4.
+   Preencher as outras 23 notas com 4.
+   Esperado: pedir a nota do mesmo setor apos 0 e 6 e avancar
+   somente apos receber 4. Todas as medias ficam em 4.00.
+   Os quatro setores aparecem nas listas de maior e menor media.
+   Total de 0 avaliacoes criticas.
+*/
+
 void lerAvaliacoes(int hotel[][SETORES]);
 void calcularMediaSetor(int hotel[][SETORES], float *medias);
 float calcularMediaGeral(float *medias);

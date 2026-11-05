@@ -1,0 +1,54 @@
+Planejamento: 
+- Defina bem as 4 questões, isso deverá ser revisado por mim caso não esteja nos objetivos que desejo, permita a correção durante o planejamento.
+- Utilize principalmente o que já foi estudado na linguagem C (Algoritmos simples, Condicionais, Loops, Vetores, Matrizes, Introdução a funções, noções básicas de ponteiros). Sugira dicas que facilitaram determinadas soluções, incluindo strings, manipulação, etc.
+- Aprender novas coisas também será bem vindo e você pode facilitar meu trabalho.
+- Identifique entradas, saídas, estruturas de dados, validações e funções(sem sair das regras supracitadas).
+- Irei escrever os algoritmos iniciais para cada questão e você deverá me auxiliar a concluir cada questão da maneira como solicitada no enunciado.
+- Quando eu for tirar dúvidas, irei escrever "Dúvida rápida:" no início, e quero que você me responda apenas o necessário sem muito texto de explicação, para não sobrecarregar a conversa com informações desnecessárias, seja breve e pontual.
+- Caso tenha sugestões, faça e explique brevemente o porquê.
+- Eu serei o responsável pelo código, me permita estruturá-lo bem para eu conseguir fazer de maneira rápida e correta, incluindo testes e comentários importantes sobre o código(principalmente dentro do programa).
+
+Para cada questão(Devo entregar como justificativa para as decisões):
+- Rescrever o problema em poucas palavras a partir do meu código e da minha linha de raciocínio para a resolução do problema.
+- Liste entradas, saídas, restrições e dados a armazenar que eu definir. Justifique por que vetor ou matriz.
+- Faça uma análise pontual acerca do meu planejamento das questões, sem quebrar as regras já mencionadas acima.
+- Irei implementar uma primeira versão e posteriormente irei enviar com as intruções do que fazer.
+- Caso eu tenha dúvida sobre algum trecho, seguirei a intrução do planejamento, e se necessário informarei que preciso de mais informações.
+- Verifique se existe pelo menos 3 testes no código, incluindo caso-limite se pertinente e entradas inválidas.
+- Revisão completa dos programa seguindo todas as regras anteriores.
+
+Quais questões estou responsável (prova em dupla):
+- Questão 2
+- Questão 4
+- Existe a possibilidade de eu solicitar as outras duas.
+
+Questão 2:
+- Leia a questão 2 no arquivo: Atividade_Avaliativa_IA_Vetores_Matrizes_Funcoes
+- Devo fazer uma matriz chamada hotel[5][8]
+- função inicializarMatriz para atribuir (0) a todos os elementos da matriz, e permitir a ocupação (1). Entrada: andar, quarto, mostrar mensagem se a ocupação foi bem sucedida ou se o quarto já está ocupado como saída. restrições para valores fora da matriz, passar a matriz como parâmetro, função sem retorno.
+- função exibirOcupacao mostrar como está a ocupação naquele momento. Função sem retorno, matriz como parâmetro, mostrar no terminal de uma maneira bonita visualmente.
+- função contarOcupadosAndar solicitar andar e percorrer a matriz para descobrir quantos ocupados. Função sem retorno e matriz como parâmetro, permitir quantas vezes o usuário quiser ver e diferentes andares. restrições para valores fora da matriz e valores inválidos.
+- função calcularTaxaOcupacao, deve retornar a taxa como float, e receber a matriz como parâmetro, realizar o cálculo para retornar já em forma de percentual.
+- função consultarQuarto, função sem retorno e que recebe a matriz como parâmetro, deve incluir restrições para valores fora da matriz ou que não representem o objetivo da função. Deve consultar quarto e validar índice.
+- Na main, o código exibirá um menu que permita o usuário navegar entre as sub-rotinas, realizando que ele quiser, e coloque uma função de encerrar o programa, com restrições para respostas erradas ou que não atendam as necessidades.
+- Sugira testes para mim, não sei quais fazer, 3 bons testes.
+
+- Dúvida rápida: como passar uma matriz bidimensional para uma função(melhores maneiras)? Por que a quantidade de colunas deve ser conhecida no parâmetro? Como converter a numeração humana (1 a 5, 1 a 8) para índices iniciados em zero?
+
+Questão 4:
+- leia a questão 4 no arquivo Atividade_Avaliativa_IA_Vetores_Matrizes_Funcoes
+- Matriz para guardar os nomes dos setores em char(string), matriz[6][4] para as notas em float. só aceitar notas de 1 a 5.
+- função lerAvaliacoes sem retorno, com parâmetro a matriz, receber e validar todas as notas. Restrições para notas fora do exigido.
+- função calcularMediaSetor função sem retorno, recebe a matriz de notas. Calcula a meédia de uma coluna (setor), recebe qual coluna é e calcula.
+- função calcularMediaGeral, mesma coisa da de cima, mas faz o cálculo para todos e exibe na tela.
+- identificarExtremos, sem retorno, recebe matriz, exibe na tela.
+- contarAvaliacoesCriticas contar linhas com notas críticas.
+- exibirRelatorio Apresentar os resultados.
+- indice que 3 teste pontuais, 
+
+- Dúvida rápida: como calcular média por coluna? Como evitar contar duas vezes uma avaliação com várias notas críticas? Como tratar empates entre setores?
+
+Conclusão: 
+- Mande as estruturas bem delimitadas
+- Seja breve no que foi solicitado
+

@@ -1,0 +1,36 @@
+Considere a questão, o que já sei, e o que preciso aprender a fazer, essas partes, que ainda não sei, deixe em aberto no código com instruções breves do que fazer e como funciona, siga também as recomendações, e no final gere um resumo sobre o que falta, e como o código vai funcionar:
+
+- Questão: Apenas leia, já planejei como fazer ela.
+Questão 2 – Ocupação de um hotel (matriz e funções)
+Um hotel possui 5 andares, cada um com 8 quartos. Represente a ocupação por uma matriz 5 × 8: 0 significa livre e 1 significa ocupado. Crie um programa para registrar e analisar a ocupação.
+Inicialize todos os quartos como livres ou permita informar a ocupação de cada um.
+Exiba a matriz de forma organizada, identificando andares e quartos.
+Calcule quartos ocupados e livres por andar e no hotel inteiro.
+Informe o andar com maior taxa de ocupação.
+Permita consultar um quarto informando andar e número, validando os limites.
+Função sugerida
+Responsabilidade
+inicializarMatriz
+Preencher a matriz com o estado inicial.
+exibirOcupacao
+Exibir a matriz.
+contarOcupadosAndar
+Retornar o total ocupado em um andar.
+calcularTaxaOcupacao
+Calcular a taxa percentual.
+consultarQuarto
+Consultar quarto e validar índices.
+
+Investigue: como passar uma matriz bidimensional para uma função? Por que a quantidade de colunas deve ser conhecida no parâmetro? Como converter a numeração humana (1 a 5, 1 a 8) para índices iniciados em zero?
+
+- Sugestões que você deve seguir:
+Você vai usar int hotel[5][8] porque cada posição representa um quarto em um andar. A entrada é a opção do menu e, conforme a operação, o andar e o quarto. O programa deve mostrar o mapa de ocupação, o estado de um quarto, os totais e a taxa geral.
+- inicializarMatriz coloca 0 em todos os quartos. Separe o registro em ocuparQuarto, que valida andar e quarto, altera o estado para 1 e avisa se o quarto já estiver ocupado.
+- Sugiro que contarOcupadosAndar receba a matriz e o índice do andar e retorne um int. Assim, o menu pode usar a mesma contagem para mostrar os ocupados e livres por andar e no hotel inteiro e identificar o andar com maior taxa de ocupação. Como todos os andares têm oito quartos, basta comparar as contagens.
+- calcularTaxaOcupacao retorna 100.0f * totalOcupados / 40. exibirOcupacao e consultarQuarto podem continuar como void. O próprio laço do menu pode encerrar o programa ao selecionar a opção de sair.
+Dúvida rápida. Use int hotel[][QUARTOS] no parâmetro, com QUARTOS igual a 8. O C precisa saber quantas colunas há para calcular o tamanho de cada linha e localizar hotel[i][j]. Valide primeiro andar de 1 a 5 e quarto de 1 a 8. Depois, subtraia 1 de ambos para obter os índices.
+
+- Conclusão:
+Avalie o que já fiz no código, e siga as intruções do inicio, até agora só aprendi isso aqui:
+Algoritmos simples, Condicionais, Loops, Vetores, Matrizes, Introdução a funções, noções básicas de ponteiros)
+- Mas quero aprender mais coisas gradualmente.

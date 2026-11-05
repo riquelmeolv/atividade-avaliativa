@@ -1,0 +1,20 @@
+Revisão — Questão 4: Pesquisa de satisfação do hotel
+
+Revise o código que eu enviar com base no enunciado abaixo e no que já estudei em C: algoritmos simples, condicionais, laços, vetores, matrizes, funções e noções básicas de ponteiros. Quero implementar as partes que ainda preciso aprender. Se mostrar um esqueleto, preserve o que já fiz e deixe essas partes como comentários TODO, com instruções breves sobre o que fazer e por quê.
+
+Enunciado
+
+Um hotel registra seis avaliações para quatro setores: recepção, limpeza, restaurante e manutenção. Use uma matriz 6 × 4, com uma avaliação por linha e um setor por coluna. Leia as 24 notas, aceitando apenas inteiros de 1 a 5. Calcule a média de cada setor e armazene-a em um vetor. Calcule a média geral, identifique os setores com maior e menor média e conte quantas avaliações deram nota 1 ou 2 a pelo menos um setor. Exiba um relatório com as médias em duas casas decimais.
+
+Pontos para verificar
+
+- lerAvaliacoes: a matriz armazena notas como int? O programa rejeita texto, números decimais e valores fora de 1 a 5? Uma entrada inválida faz o programa pedir a mesma nota novamente?
+- calcularMediaSetor: percorre as seis linhas de uma única coluna? O resultado tem parte decimal quando necessário e vai para a posição correta do vetor?
+- calcularMediaGeral: considera as 24 notas e evita truncamento por divisão inteira?
+- identificarExtremos: usa o vetor de médias e trata os empates de forma explícita? Considere também quando todos os setores têm a mesma média.
+- contarAvaliacoesCriticas: cada linha com nota 1 ou 2 é contada uma única vez, mesmo que tenha mais de uma nota crítica?
+- exibirRelatorio: apresenta os nomes dos setores, suas médias, a média geral, os extremos e o total de avaliações críticas? Todas as médias aparecem com duas casas decimais?
+
+Verifique se há pelo menos três testes que cubram médias diferentes, múltiplas notas críticas em uma linha, empate e entradas inválidas. Para cada teste, indique o resultado esperado e informe se ele foi executado ou apenas analisado.
+
+No final, resuma o que funciona, o que falta implementar e como as funções se encaixam na main. Se eu começar com "Dúvida rápida:", responda só o necessário.

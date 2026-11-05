@@ -1,0 +1,16 @@
+Planejamento — Questão 4: Pesquisa de satisfação do hotel
+
+Ajude-me a planejar a solução em C. Eu vou escrever a primeira versão do código. Revise meu raciocínio e deixe espaço para eu corrigir o planejamento antes de implementar. Use condicionais, laços, vetores, matrizes, funções e, se necessário, ponteiros básicos. Explique sugestões brevemente. Quando eu começar com "Dúvida rápida:", responda só o necessário.
+
+- Reescreva o problema em poucas palavras a partir do meu planejamento. Liste entradas, saídas, restrições e justifique as estruturas escolhidas.
+- Use uma matriz int notas[6][4]. Cada linha representa uma avaliação e cada coluna representa um setor, na ordem: recepção, limpeza, restaurante e manutenção. Use um vetor de 4 médias com casas decimais. Posso usar um vetor de strings para os nomes dos setores.
+- lerAvaliacoes deve preencher a matriz com 24 inteiros de 1 a 5. Se a entrada for inválida, deve pedir novamente a nota da mesma posição.
+- calcularMediaSetor deve receber a matriz e o índice da coluna, calcular a média das seis notas e retorná-la para ser armazenada no vetor de médias.
+- calcularMediaGeral deve calcular e retornar a média das 24 notas. Oriente como evitar a divisão inteira nos dois cálculos.
+- identificarExtremos deve usar o vetor de médias para identificar os setores com maior e menor média. Proponha uma regra para empates e explique como aplicar essa regra.
+- contarAvaliacoesCriticas deve retornar quantas linhas têm pelo menos uma nota 1 ou 2. Cada linha conta no máximo uma vez.
+- exibirRelatorio deve mostrar as médias dos quatro setores, a média geral, os setores com maior e menor média e o total de avaliações críticas. Mostre as médias com duas casas decimais.
+
+Sugira três testes com resultados esperados: médias diferentes com pelo menos uma linha contendo várias notas críticas, empate entre setores e entradas inválidas seguidas de uma nota válida. Depois que eu enviar minha implementação, revise se ela atende ao enunciado e cobre esses casos.
+
+Dúvida rápida: como percorrer só uma coluna? Como parar de procurar notas críticas após encontrar a primeira de uma linha? Como mostrar os setores empatados?

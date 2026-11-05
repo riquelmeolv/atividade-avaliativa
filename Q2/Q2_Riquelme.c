@@ -39,6 +39,7 @@ int main(void)
         if(scanf("%d", &op) != 1)
         {
             printf("Entrada invalida. Tente novamente.\n");
+            break;
         }
 
         if(op < 0 || op > 5)
